@@ -1,13 +1,20 @@
 using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace DayZPosConv
+namespace DayZPosConv.Scenes
 {
     public class COMScene
     {
+        // Dummy
         public string name;
         [JsonProperty("m_SceneObjects")]
-        public List<SceneObject> objects;
+        public List<SceneObject> Objects;
+
+        public COMScene()
+        {
+            // Dummy data
+            name = "latest";
+        }
 
         public class SceneObject
         {
@@ -20,9 +27,9 @@ namespace DayZPosConv
         
         public static implicit operator COMScene(List<DayZObject> objects)
         {
-            var scene = new COMScene {name = "latest", objects = new List<SceneObject>()};
+            var scene = new COMScene {Objects = new List<SceneObject>()};
             foreach (var obj in objects) 
-                scene.objects.Add(obj);
+                scene.Objects.Add(obj);
             return scene;
         }
         

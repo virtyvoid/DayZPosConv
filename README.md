@@ -16,7 +16,10 @@ As for example, you can use this tool for restoring the "COM Scene" from TraderO
   - COM Scene (JSON file).  
   The scene that you can load and edit in Community Offline Mode.  
   Scene file can be found under server profile directory.  
-  The name either is `latest.json` for Expansion Mod COM **OR** `COMObjectEditorSave.json` for Vanilla COM.
+  The name either is `latest.json` for Expansion Mod COM **OR** `COMObjectEditorSave.json` for Vanilla COM.  
+  - DayZ Editor Scene (*.dze JSON file)  
+  The scene that you can load and edit in [DayZ Editor](https://github.com/InclementDab/DayZ-Editor).  
+  Note: Make sure to check if `MapName` property matches with the map you're working with.
 
 ### Usage
 Clone and build it yourself or get a [binary release](https://github.com/virtyvoid/DayZPosConv/releases).  

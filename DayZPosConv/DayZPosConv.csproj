@@ -58,9 +58,11 @@
     <Compile Include="Converting\Converters\COMExportConverter.cs" />
     <Compile Include="Converting\Converters\COMSceneConverter.cs" />
     <Compile Include="Converting\Converters\COMExportExpansionPosConverter.cs" />
+    <Compile Include="Converting\Converters\DZESceneConverter.cs" />
     <Compile Include="Converting\Converters\TraderPosConverter.cs" />
     <Compile Include="Converting\IPosConverter.cs" />
     <Compile Include="Converting\Readers\COMExportReader.cs" />
+    <Compile Include="Converting\Readers\DZESceneReader.cs" />
     <Compile Include="Converting\Readers\COMSceneReader.cs" />
     <Compile Include="Converting\Readers\COMExportExpansionReader.cs" />
     <Compile Include="Converting\Readers\TraderPosReader.cs" />
@@ -71,11 +73,12 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Converting\IPosReader.cs" />
-    <Compile Include="Objects\COMScene.cs" />
     <Compile Include="Objects\DayZObject.cs" />
     <Compile Include="Objects\SimpleVector3.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scenes\COMScene.cs" />
+    <Compile Include="Scenes\DZEScene.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

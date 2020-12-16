@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using DayZPosConv.Scenes;
 using Newtonsoft.Json;
 
 namespace DayZPosConv.Converting
@@ -9,7 +10,7 @@ namespace DayZPosConv.Converting
         {
             var scene = (COMScene) JsonConvert.DeserializeObject(input, typeof(COMScene));
             var result = new List<DayZObject>();
-            foreach (var sceneObject in scene.objects) 
+            foreach (var sceneObject in scene.Objects) 
                 result.Add(new DayZObject(sceneObject.param1, sceneObject.param2, sceneObject.param3));
             return result;
         }

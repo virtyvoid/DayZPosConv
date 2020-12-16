@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using DayZPosConv.Scenes;
 using Newtonsoft.Json;
 
 namespace DayZPosConv.Converting
