@@ -2,3 +2,4 @@
 .vs/
 DayZPosConv/bin/
 DayZPosConv/obj/
+*.perflog

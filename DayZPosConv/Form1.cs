@@ -10,6 +10,7 @@ namespace DayZPosConv
 {
     public partial class Form1 : Form
     {
+        private static readonly UTF8Encoding Utf8Encoding = new(false);
         private static string _welcomeText;
         private static IPosReader[] _readers;
         private static IPosConverter[] _converters;
@@ -102,7 +103,7 @@ namespace DayZPosConv
             using var ofd = new OpenFileDialog { CheckFileExists = true };
             if(ofd.ShowDialog() != DialogResult.OK)
                 return;
-            textBox1.Text = File.ReadAllText(ofd.FileName, Encoding.UTF8);
+            textBox1.Text = File.ReadAllText(ofd.FileName, Utf8Encoding);
         }
 
         private void btnExport_Click(object sender, EventArgs e)
@@ -110,7 +111,7 @@ namespace DayZPosConv
             using var sfd = new SaveFileDialog{ CheckPathExists = true, RestoreDirectory = true, OverwritePrompt = true };
             if(sfd.ShowDialog() != DialogResult.OK)
                 return;
-            File.WriteAllText(sfd.FileName, textBox2.Text, Encoding.UTF8);
+            File.WriteAllText(sfd.FileName, textBox2.Text, Utf8Encoding);
         }
     }
 }
