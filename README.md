@@ -20,6 +20,9 @@ As for example, you can use this tool for restoring the "COM Scene" from TraderO
   - DayZ Editor Scene (*.dze JSON file)  
   The scene that you can load and edit in [DayZ Editor](https://github.com/InclementDab/DayZ-Editor).  
   Note: Make sure to check if `MapName` property matches with the map you're working with.
+  - DayZ Object Spawner (JSON files)  
+  Built-in server feature. Requires absolutely no mods.  
+  You can read more about it [here](https://community.bistudio.com/wiki/DayZ:Object_Spawner). 
 
 ### Usage
 Clone and build it yourself or get a [binary release](https://github.com/virtyvoid/DayZPosConv/releases).  
